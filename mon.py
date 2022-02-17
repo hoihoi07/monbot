@@ -4,6 +4,9 @@ import telepot
 import pyautogui
 from telepot.loop import MessageLoop
 from tokens import *
+import os
+
+os.environ['DISPLAY'] = ':0'
 
 class MyBot(telepot.Bot):
 	def __init__(self, *args, **kwargs):
